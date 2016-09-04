@@ -1,0 +1,141 @@
+html ,body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	font-family: "黑体","宋体",sans-serif;
+}
+
+.container {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	min-width: 700px;
+	min-height: 700px;
+	text-align: center;
+	background: url(../img/bg08.png);
+	background-repeat: repeat;
+	overflow: auto;
+	position: relative;
+}
+
+.head {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 20px;
+}
+
+.main {
+	margin: 0;
+	padding: 0;
+	width: 640px;
+	height: 640px;
+	margin: 0px auto;
+	text-align: center;
+	border-radius: 10px;
+	   -moz-box-shadow: 0 0 10px black;
+	-webkit-box-shadow: 0 0 10px black;
+	     -o-box-shadow: 0 0 10px black;
+	        box-shadow: 0 0 10px black;
+	box-sizing: border-box;
+	/*background: url(../img/bg.png);*/
+	/*background-repeat: repeat;*/
+	background-color: rgba(0,0,0,0.1);
+	position: relative;
+}
+
+.control {
+	margin: 0;
+	padding: 0;
+	width: 640px;
+	height: 50px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+.control .refresh {
+	-webkit-appearance: none;
+	width: 100%;
+	height: 50px;
+	font-family: "黑体","宋体",sans-serif;
+	font-size: 25px;
+	padding: 0;
+	background-color: #3F3F3F;
+	color: #FFFFFF;
+	border: none;
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+	        border-radius: 10px;
+	-webkit-box-sizing:border-box; /* Safari */
+	   -moz-box-sizing:border-box; /* Firefox */
+	        box-sizing:border-box;
+}
+
+.control .refresh:active {
+	background-color: #7F7F7F;
+	-webkit-transition: all 0.2s linear;
+	   -moz-transition: all 0.2s linear;
+	     -o-transition: all 0.2s linear;
+	        transition: all 0.2s linear;
+}
+
+/********以下是固定的页面加载完成前loading效果*******/
+.spinner {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	/*background-color: #BFBFBF;*/
+	background: url(../img/bg08.png);
+	background-repeat: repeat;
+	z-index: 999999;
+}
+ 
+.bounces {
+	z-index: 999999;
+	width: 100px;
+	height: 100px;
+	position: relative;
+	margin: 150px auto;
+}
+
+.double-bounce1, .double-bounce2 {
+	z-index: 999999;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #000000;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	-webkit-animation: bounce 2.0s infinite ease-in-out;
+	animation: bounce 2.0s infinite ease-in-out;
+}
+ 
+.double-bounce2 {
+	-webkit-animation-delay: -1.0s;
+	animation-delay: -1.0s;
+}
+ 
+@-webkit-keyframes bounce {
+	0%, 100% { -webkit-transform: scale(0.0) }
+	50% { -webkit-transform: scale(1.0) }
+}
+ 
+@keyframes bounce {
+	0%, 100% {
+	transform: scale(0.0);
+	-webkit-transform: scale(0.0);
+	} 50% {
+	transform: scale(1.0);
+	-webkit-transform: scale(1.0);
+	}
+}

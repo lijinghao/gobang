@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>五子棋</title>
+    <link rel="stylesheet" type="text/css" href="./css/init.css">
+    <link rel="stylesheet" type="text/css" href="./css/UI.css">
+</head>
+<body onload="drawRect()">
+    <div class="container">
+        <div id="spinner" class="spinner">
+            <div class="bounces">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+        <div class="head">
+            
+        </div>
+        <div class="main">
+            <canvas id="canvas" class="canvas" onmousedown="play(event)" width="640" height="640">换个浏览器试试呗</canvas>    
+        </div>
+        <div class="control">
+            <input id="refresh" class="refresh" type="button" value="再来一局"></input>
+        </div> 
+    </div>
+    <script src="./js/jquery-2.1.4.min.js" ></script>
+    <script src="./js/human.js" ></script>
+    <script src="./js/ai.js" ></script>
+</body>
+</html>
